@@ -1,0 +1,23 @@
+.buttons {
+    text-align: center;
+}
+.input {
+    text-align: center;
+}
+.timer{
+    text-align: center;
+}
+
+#myProgress {
+    margin: auto;
+    width: 100%;
+    background-color: grey;
+    margin-top: 2rem;
+    margin-bottom: 1rem
+  }
+  
+  #myBar {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+  }

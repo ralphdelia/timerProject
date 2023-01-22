@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="timer.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+
+
+
+    <div id="myProgress" style="margin-bottom: 1rem">
+        <div id="myBar"></div>
+    </div>
+    <div id="bar"></div>
+
+    <div class="timer" id="timer"></div>
+
+    <p class="input">Time on:
+        <input id="min" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3"> m
+        <input id="sec" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3"> s
+
+    <p class="input">
+        Time off:
+        <input id="timeOff" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3">
+        Rounds:
+        <input id="rounds" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3">
+
+    </p>
+    </p>
+
+    <p class="buttons">
+        <button onclick="set()" ;>Set</button>
+        <button onclick="timer.start();">Start</button>
+        <button onClick="timer.stop();">Stop</button>
+        <button onClick="timer.reset();">Reset</button>
+
+
+    </p>
+    </div>
+</body>
+</html>
