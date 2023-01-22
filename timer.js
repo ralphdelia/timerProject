@@ -31,7 +31,6 @@ class Timer {
         Time off:   00:${zeroPad(this.timeOff)}`
     }
 
-
     resetBar() {
         this.width = 0;
     }
