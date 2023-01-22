@@ -20,14 +20,14 @@
     <div id="bar"></div>
 
     <div class="timer" id="timer"></div>
-
+    
     <p class="input">Time on:
         <input id="min" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3"> m
         <input id="sec" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3"> s
 
     <p class="input">
         Time off:
-        <input id="timeOff" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3">
+        <input id="timeOff" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3" >
         Rounds:
         <input id="rounds" type="number" pattern="[0-9]{2}" placeholder="00" min="0" max="59" maxlength="3">
 
@@ -35,7 +35,7 @@
     </p>
 
     <p class="buttons">
-        <button onclick="set()" ;>Set</button>
+        <button onclick="validateSet()" ;>Set</button>
         <button onclick="timer.start();">Start</button>
         <button onClick="timer.stop();">Stop</button>
         <button onClick="timer.reset();">Reset</button>

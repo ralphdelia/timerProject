@@ -1,7 +1,3 @@
-
-let storedVariables = {};
-
-
 class Timer {
     constructor(min, sec, rounds, timeOff, incrementValueOn, incrementValueOff) {
         this.min = min;
@@ -121,7 +117,20 @@ class Timer {
         document.getElementById("timer").innerHTML = this.formatDisplay();
     }
 }
+
+
+function validateSet(){
+    var x = document.getElementById("timeOff").value;
+    if (x == "" || x == 0){
+        document.getElementById("timer").innerHTML = "Time off required!";
+        return false;
+    }
+    return set();
+}
+
 let timer;
+let storedVariables = {};
+
 function set() {
     
     let min = document.getElementById("min").value;
